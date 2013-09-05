@@ -2,6 +2,8 @@ Youstars::Application.routes.draw do
 
   root 'home#index'
 
+  get 'oauthed' => 'home#oauth'
+  get 'youtube_login' => 'home#youtube_login'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

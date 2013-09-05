@@ -1,5 +1,8 @@
-var youstars = angular.module('youstars', [], function ($routeProvider, $locationProvider) {
+//= require youstars
+
+angular.module('youstars').config(function ($routeProvider, $locationProvider) {
 	$routeProvider.when('', {
-		templateUrl: '<%= asset_path("index.html") %>'
+		templateUrl: '<%= asset_path("index.html") %>',
+    controller: 'IndexController'
 	})
-})
+});
